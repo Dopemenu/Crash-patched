@@ -1,5 +1,3 @@
-# Crash-patched
-Fivem Lua
 function ExecutePedSequence()
     local ped = PlayerPedId()
     SetEntityVisible(PlayerPedId(), false, false)
@@ -10,7 +8,6 @@ function ExecutePedSequence()
     SetPlayerModel(PlayerId(), GetHashKey("CS_TaosTranslator"))
     SetPedDefaultComponentVariation(PlayerPedId())
     SetEntityVisible(PlayerPedId(), false, false)
-
     local shapeFirst = 0 
     local shapeSecond = 0 
     local shapeThird = 1
@@ -34,7 +31,6 @@ function ExecutePedSequence()
         false
     )
     Wait(100)
-
     shapeFirst = 1
     shapeSecond = 0 
     shapeThird = 1
@@ -57,7 +53,6 @@ function ExecutePedSequence()
         thirdMix,
         false
     )
-
     shapeFirst = 1 
     shapeSecond = 1 
     shapeThird = 1
